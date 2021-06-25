@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>TODO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" type="image/x-icon" href="./favicon.png" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <main class="wrapper">
+    <nav class="navbar">
+      <ul class="nav">
+        <li class="nav__item">TODO</li>
+      </ul>
+    </nav>
+    <input style="margin-bottom: 60px;" type="text" id="myInput" class="form-control" onkeyup="search()" placeholder="Search for names.." title="Type in a name">
+    <form class="todo-form">
+      <div class="input-field">
+        <input type="text" id="input--add" class="form-control" placeholder="Add a new todo" />
+        <label for="input--add"></label>
+      </div>
+      <input type="submit" class="button button--add btn btn-primary" value="Add" />
+    </form>
+    <ul class="todo-collection"></ul>
+  </main>
+  <script src="./main.js"></script>
+</body>
+
+</html>
